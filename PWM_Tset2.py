@@ -10,7 +10,7 @@ LED = 12 # PWM pin
 GPIO.setup(LED, GPIO.OUT, initial=GPIO.LOW)
 # PWM 객체 인스턴스 작성ls
 
-PWM_led = GPIO.PWM(LED, 100 )
+PWM_led = GPIO.PWM(LED, GPIO.HIGH )
 # PWM 신호 출력
 PWM_led.start(100)
 
